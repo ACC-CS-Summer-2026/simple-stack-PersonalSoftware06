@@ -1,6 +1,7 @@
 /*********************************
 * Jada Lee
 * Assignment 4: Simple Stack
+* 6/21/26
 * Purpose: Class declaration for the Stack ADT.
 * Implements a simple integer stack using a static
 * array and top index.
@@ -17,7 +18,7 @@ public:
 	/*****************
 	* Constructors/Destructor
 	*****************/
-	Stack()
+	Stack();
 	~Stack();
 
 	/****************

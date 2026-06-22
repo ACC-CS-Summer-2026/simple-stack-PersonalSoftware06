@@ -27,12 +27,23 @@ Stack::Stack() {
 * parameters: int value - the value to push
 * Returns: bool - true if successful, false if overflow.
 */
+Stack::~Stack() {
+    // nothing to clean up
+}
+
+
+/*
+* push
+* Purpose: Inserts a value at the top of the stack
+* Parameters: int valuse - the valuse to push.
+* Returns: bool - true if successful, false if overflow
+*/
 bool Stack::push(int value) {
     if (top >= STACK_SIZE - 1) {
 	return false;
     }
     top++;
-    data[top] = valuse;
+    data[top] = value;
     return true;
 }
 
